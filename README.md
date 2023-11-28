@@ -1,11 +1,15 @@
 下载依赖(下载依赖之后会开启pretter和ESLint以及git提交规范检查)
+
 ```shell
 yarn
 ```
+
 使用脚手架默认初始化了一个空的git仓库，如果想要关联github仓库执行以下命令
+
 ```shell
 git branch -M main
 ```
+
 ```shell
 git remote add origin 仓库地址
 ```
