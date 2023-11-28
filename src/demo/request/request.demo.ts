@@ -1,4 +1,4 @@
-import { defaultRequest } from "../request/server";
+import { defaultRequest } from "../../request/server";
 
 // get请求
 export const getDemoApi = (data: any) =>
@@ -32,4 +32,10 @@ export const fullDemoApi = (data: any) =>
     method: "",
     url: "",
     data: data, //看对应的请求类型看传递的参数是data还是params
+  });
+
+// 演示useAsync()hook访问接口
+export const getUserApi = () =>
+  defaultRequest.get({
+    url: "https://api.github.com/users?since=100",
   });

@@ -3,8 +3,10 @@ import NotAuth from "../components/auth/NotAuth";
 import NotPower from "../pages/error/NotPower";
 import NotFound from "../pages/error/NotFount";
 import defaultRoutes from "./default";
+import demoRoutes from "../demo/router/demo";
 
 const routes: RouteObject[] = [
+  ...demoRoutes,
   ...defaultRoutes,
   {
     path: "/NotHasPower",

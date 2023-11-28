@@ -12,12 +12,14 @@ export const useAsync = () => {
   // 返回一个函数，用于保存起来
   const retry = useRef(() => {});
   const setDate = useCallback((data: any) => {
+    // 这里时获取的数据
+    console.log(data);
     setState({
-      data: data.data.pagingRes,
+      data: data,
       isLoading: false,
       error: null,
-      total: data.data.allTotals || 0,
-      isNodata: data.data.allTotals === 0,
+      total: data.length || 0,
+      isNodata: data.length === 0,
     });
   }, []);
   const setError = (err: any) => {

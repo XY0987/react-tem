@@ -1,4 +1,4 @@
-下载依赖(下载依赖之后会开启pretter和ESLint以及git提交规范检查)
+下载依赖(下载依赖之后会开启prettier和ESLint以及[git提交规范](https://github.com/conventional-changelog/commitlint/#what-is-commitlint))
 
 ```shell
 yarn
@@ -16,7 +16,7 @@ git remote add origin 仓库地址
 
 ## 项目说明
 
-该项目是脚手架xytem的react模板仓库，包含了我写react项目的一些经验，目的是为了避免开发时使用脚手架生成项目之后仍需要下载多种东西，比如axios、antd等，同时还需要添加平常写项目的一些自己写的工具
+该项目是脚手架xytem的react模板仓库，包含了我写react项目的一些经验，目的是为了避免开发时使用脚手架生成项目之后仍需要下载多种东西，比如axios、antd等，同时还需要添加平常写项目的一些自己写的工具，具体效果可以运行项目进入/demo看实际效果
 
 > 采用技术栈
 > react + ts + react-toolkit + axios + react-router + antd + sass + pritter + commitlint
@@ -48,3 +48,5 @@ git remote add origin 仓库地址
    使用脚手架生成对应的项目代理配置文件
 2. 登录、注册以及忘记密码页面配置
    登录页面登录访问对应接口(finishHandle函数中)，注册页面获取验证码(getCode函数中)和注册访问对应接口(finishHandle函数中)，忘记密码获取验证码(getCode函数中)和修改密码对应接口(finishHandle函数中)
+3. demo页面演示，如果不想使用直接把demo文件夹删除即可，并再router的index.tsx文件中移除相对应的引入
+4. useAsync()由于对请求接口的进一层封装，所以需要改动setDate函数中给数据赋值的逻辑
